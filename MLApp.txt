@@ -1,0 +1,8 @@
+
+pandas
+numpy
+scikit
+mlflow
+spark
+streaming
+devops
