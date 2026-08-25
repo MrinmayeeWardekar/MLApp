@@ -3,7 +3,7 @@ from pyspark.sql import DataFrame
 
 def clean_data(df: DataFrame) -> DataFrame:
     """Clean transaction data."""
-    df = df.filter(df['amount'] > 0).dropna()
+    df = df.filter(df['amount'] > 0).dropna().dropDuplicates()
     return df
 
 def calculate_totals(df: DataFrame) -> DataFrame:
