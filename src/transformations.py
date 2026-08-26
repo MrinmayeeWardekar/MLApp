@@ -16,6 +16,7 @@ def calculate_totals(df: DataFrame) -> DataFrame:
 def segment_customers(df):
     """RFM-based customer segmentation for MLAPP-1234."""
     from pyspark.sql import functions as F
+    df = df.filter(F.col("total_spend").isNotNull())
     return df.withColumn(
         "segment",
         F.when(F.col("total_spend") > 10000, "Premium")
