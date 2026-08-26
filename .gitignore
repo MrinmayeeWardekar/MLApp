@@ -5,3 +5,6 @@ __pycache__/
 spark-warehouse/
 .vscode/
 .idea/
+*.env
+config/*_password.txt
+config/secrets.yaml
