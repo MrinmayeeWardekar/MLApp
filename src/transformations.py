@@ -28,3 +28,7 @@ def segment_customers(df):
 def refactor_etl(df):
     """ETL refactor placeholder for MLAPP-2000."""
     return df
+
+def wip_function(df):
+    """Work in progress — not ready yet."""
+    pass
