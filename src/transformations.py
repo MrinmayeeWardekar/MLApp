@@ -24,3 +24,7 @@ def segment_customers(df):
          .when(F.col("total_spend") > 1000, "Silver")
          .otherwise("Bronze")
     )
+
+def refactor_etl(df):
+    """ETL refactor placeholder for MLAPP-2000."""
+    return df
